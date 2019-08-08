@@ -8,7 +8,7 @@ export default function GalleryContainer({images}) {
     // using index on key is a bad practice
     return <div>
         {images.map( (image, index) => (
-            <Card key={index}>
+            <Card key={`image-${index}`} style={{margin: 10}}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
