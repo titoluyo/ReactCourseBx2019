@@ -4,6 +4,7 @@ import Header from './components/header';
 import Body from './components/body';
 import { Fab, createMuiTheme } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
+import Add from '@material-ui/icons/Add';
 
 const theme = createMuiTheme({
   palette: {
@@ -29,6 +30,7 @@ function App() {
         <Body></Body>
         <div style={{ position: 'fixed', right: 10, bottom: 10 }}>
           <Fab>
+            <Add/>
           </Fab>
         </div>
       </div>

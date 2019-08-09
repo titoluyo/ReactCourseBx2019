@@ -4,7 +4,7 @@ import Estados from './Estados';
 import Contactos from './Contactos';
 import Llamadas from './Llamadas';
 
-export default function Body({}) {
+export default function Body() {
     const [tab, setTab] = useState(0);
     const handleChangeTab = (event, newValue) => {setTab(newValue)};
     return (<div>

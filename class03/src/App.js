@@ -9,7 +9,8 @@ function App() {
   //console.log('images');
   //console.log(images);
   const handleAdd = () => {
-    let image = `https://picsum.photos/id/${images.length + 1}/400/300`;
+//    let image = `https://picsum.photos/id/${images.length + 1}/400/300`;
+    let image = `https://thispersondoesnotexist.com/image?id=${Math.ceil(Math.random()*10000)}`;
     setImages([...images, image]);
     //console.log(images);
   }
